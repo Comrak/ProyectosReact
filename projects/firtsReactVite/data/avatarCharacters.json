@@ -1,0 +1,22 @@
+{
+    "Characters":[{
+        "name":"Aang",
+        "img":"https://elcomercio.pe/resizer/TbEPAe4T-yPPeEJXHtiFcjYu7i8=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NFWZLBZF2NDURHTMBPMASR57KM.jpg",
+        "altText":"The last airbender",
+        "user":"airbenderAang",
+        "isFollowing":"True"
+    },{
+        "name":"Katara",
+        "img":"https://oyster.ignimgs.com/mediawiki/apis.ign.com/avatar-the-last-airbender/1/17/Korra_img.jpg",
+        "altText":"Bridge between two worlds",
+        "user":"punchingBagKorra",
+        "isFollowing":"True"
+    },{
+        "name":"Kyoshi",
+        "img":"https://qph.cf2.quoracdn.net/main-qimg-d97e93d222cce91725ae63ac74f1b8af-lq",
+        "altText":"The short tempered",
+        "user":"avatarKyoshi",
+        "isFollowing":"False"
+    }
+    ]
+}
