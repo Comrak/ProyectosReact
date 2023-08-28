@@ -1,4 +1,5 @@
 import { Square } from "./Square"
+import PropTypes from 'prop-types'
 
 export function WinnerModal({winner, handleReset}){
     if (winner === null) return null
@@ -22,4 +23,9 @@ export function WinnerModal({winner, handleReset}){
             </div>
         </section>
     )
+}
+
+WinnerModal.propTypes = {
+    winner: PropTypes.string,
+    handleReset: PropTypes.func
 }

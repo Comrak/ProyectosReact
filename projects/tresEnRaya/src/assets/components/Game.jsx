@@ -1,4 +1,5 @@
 import { Square } from "./Square"
+import PropTypes from 'prop-types'
 
 export function Game({board, updateBoard}){
     return(
@@ -14,4 +15,9 @@ export function Game({board, updateBoard}){
         }
       </section>
     )
+}
+
+Game.propTypes = {
+    board: PropTypes.array.isRequired,
+    updateBoard: PropTypes.func.isRequired
 }

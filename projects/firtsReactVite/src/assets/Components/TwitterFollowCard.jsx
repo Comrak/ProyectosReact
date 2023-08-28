@@ -1,23 +1,24 @@
 import '../style/TwitterFollowCard.css'
 import { useState } from 'react'
+import propTypes from 'prop-types'
 
-export function TwitterFollowCard({img,name,user,altText,initialIsFollowing }) {
-    
-    const [isFollowing,setIsFollowing] = useState(initialIsFollowing)
-    
+export function TwitterFollowCard({ img, name, user, altText, initialIsFollowing }) {
+
+    const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
+
     const text = isFollowing ? 'Siguiendo' : 'Seguir'
     const btnClassName = isFollowing ? 'tw-followCard-button is-following' : 'tw-followCard-button'
 
-    const handleClick = () =>{
+    const handleClick = () => {
         setIsFollowing(!isFollowing)
     }
 
-    return(
+    return (
         <article className='tw-followCard'>
             <header className='tw-followCard-header'>
-                <img className='tw-followCard-avatar' 
+                <img className='tw-followCard-avatar'
                     alt={altText}
-                    src={img}/>
+                    src={img} />
                 <div className='tw-followCard-info'>
                     <strong>{name}</strong>
                     <span className='tw-followCard-infoUserName'>@{user}</span>
@@ -31,5 +32,13 @@ export function TwitterFollowCard({img,name,user,altText,initialIsFollowing }) {
             </aside>
         </article>
     )
-    
+
+}
+
+TwitterFollowCard.propTypes = {
+    img: propTypes.string,
+    name: propTypes.string,
+    user: propTypes.string,
+    altText: propTypes.string,
+    initialIsFollowing: propTypes.bool
 }

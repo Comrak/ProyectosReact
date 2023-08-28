@@ -1,5 +1,6 @@
 import { Square } from "./Square"
 import { TURNS } from "../js/constants"
+import PropTypes from 'prop-types'
 
 export function Turn({ turn }) {
     return (
@@ -12,4 +13,9 @@ export function Turn({ turn }) {
             </Square>
         </section>
     )
+}
+
+//turn is missing in props validation
+Turn.propTypes = {
+    turn: PropTypes.string
 }
